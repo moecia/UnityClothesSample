@@ -73,7 +73,7 @@ public class EquipmentManager : MonoBehaviour
         }
         var outfitObj = Instantiate(outfit, target);
         var smr = outfitObj.GetComponent<Outfit>().SkinnedMeshRenderer;
-        var bones = SkinedMeshHelper.GetNewBones(avatarSkinnedMesh, smr);
+        var bones = SkinnedMeshHelper.GetNewBones(avatarSkinnedMesh, smr);
         smr.bones = bones;
     }
 }
